@@ -12,8 +12,22 @@
   font-size: 36px;
 }
 
+/*
+
+As pointed in the solution, one minor optimization here is to create a
+separate class just for making the font size 24px and apply to both
+the second element and the fourth. In fact, the .large class already
+achieves this. This would reduce the repetition (i.e. Don't Repeat
+Yourself, or DRY).
+
+However, I do think its super minor, as you have to add .large to two
+places anyway, thus making it a similar amount of work to repeating
+myself. As a counterpoint to myself, DRYing the code is much more
+scalable.
+
+*/
+
 #div_two {
   background-color: rgb(144, 238, 144);
-  font-size: 24px;
   font-weight: bold;
 }
